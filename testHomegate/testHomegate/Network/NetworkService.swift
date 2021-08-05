@@ -8,10 +8,15 @@
 import Foundation
 import Moya
 
-class NetworkService: TargetType {
+enum HomegateService {
+    case getAllProperties
+}
+
+extension HomegateService: TargetType {
+    
     var baseURL: URL {
 
-        guard let urlFromString = URL(string: "http://") else {
+        guard let urlFromString = URL(string: "http://private-492e5-homegate1.apiary-mock.com") else {
             fatalError("Impossible to create an URL")
         }
 
@@ -20,8 +25,9 @@ class NetworkService: TargetType {
 
     var path: String {
         switch self {
-
-        default: return ""
+        
+        case .getAllProperties:
+            return "/properties"
         }
     }
 
@@ -31,7 +37,6 @@ class NetworkService: TargetType {
 
     var parameters: [String: Any] {
         switch self {
-
 
         default:
             return [:]

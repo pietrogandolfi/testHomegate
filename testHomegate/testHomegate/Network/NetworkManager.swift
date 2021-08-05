@@ -9,9 +9,9 @@ import Foundation
 import Moya
 
 protocol NetworkManagerProtocol {
-    
+    func getAllProperties() -> [String]
 }
 
-class NetworkManager: MoyaProvider<NetworkService>, NetworkManagerProtocol {
+class NetworkManager: MoyaProvider<HomegateService>, NetworkManagerProtocol {
     
 }
