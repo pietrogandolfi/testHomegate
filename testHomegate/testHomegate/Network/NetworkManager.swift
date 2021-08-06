@@ -9,7 +9,7 @@ import Foundation
 import Moya
 
 protocol NetworkManagerProtocol {
-    func getAllProperties() -> [String]
+    func getAllProperties(completion: @escaping (([PropertyItem]?, Error?)) -> Void)
 }
 
 class NetworkManager: MoyaProvider<HomegateService>, NetworkManagerProtocol {

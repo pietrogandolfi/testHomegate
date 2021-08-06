@@ -10,32 +10,24 @@ import Moya
 
 extension NetworkManager {
     
-    func getAllProperties() -> [String] {
-        var list: [String] = []
-        
-        let request = self.request(.getAllProperties) { result in
+    func getAllProperties(completion: @escaping (([PropertyItem]?, Error?)) -> Void) {
+        _ = self.request(.getAllProperties) { result in
             switch result {
             case .success(let response):
                 do {
                     let filteredResponse = try response.filterSuccessfulStatusAndRedirectCodes()
                     let propertiesResponse = try filteredResponse.map(PropertiesResponse.self)
-//                    let pizzaPlaces = pizzaPlacesResponse.list.places
-
-//                    observer.onNext(pizzaPlaces)
-//                    observer.onCompleted()
                     
-                    print(propertiesResponse)
-
+                    completion((propertiesResponse.items, nil))
                 } catch {
-                    print(error)
+
+                    completion((nil, error))
                 }
                 
             case .failure(let error):
-                print(error)
+                completion((nil, error))
             }
         }
-        
-        return list
     }
     
 }

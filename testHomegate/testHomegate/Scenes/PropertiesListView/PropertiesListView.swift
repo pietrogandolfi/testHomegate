@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct PropertiesListView: View {
+    var interactor: PropertiesListInteractor
+    
+    init() {
+        self.interactor = PropertiesListInteractor()
+    }
     var body: some View {
         Text("Hello, world!")
+            .onAppear(perform: {
+                interactor.getProperties()
+            })
             .padding()
-        
-        let networkManager = NetworkManager()
-        
-        let prop = networkManager.getAllProperties()
     }
 }
 

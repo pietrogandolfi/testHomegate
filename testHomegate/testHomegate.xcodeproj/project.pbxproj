@@ -52,6 +52,8 @@
 		8BE61F3726BBB071006B8A22 /* NetworkManager+properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3626BBB071006B8A22 /* NetworkManager+properties.swift */; };
 		8BE61F3B26BBB557006B8A22 /* PropertiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */; };
 		8BE61F3D26BBB5C1006B8A22 /* PropertyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */; };
+		8BE61F3F26BBC59F006B8A22 /* PropertiesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */; };
+		8BE61F4126BD1F37006B8A22 /* ExternalUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */; };
 		E37EE9A61C133E2AA5B4C0EC /* Pods_testHomegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA18157AB0DB95113C0FE18B /* Pods_testHomegate.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		8BE61F3626BBB071006B8A22 /* NetworkManager+properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+properties.swift"; sourceTree = "<group>"; };
 		8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesResponse.swift; sourceTree = "<group>"; };
 		8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItem.swift; sourceTree = "<group>"; };
+		8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListInteractor.swift; sourceTree = "<group>"; };
+		8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalUrls.swift; sourceTree = "<group>"; };
 		A77CA82199AB743630DA2CCE /* Pods-testHomegate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testHomegate.release.xcconfig"; path = "Target Support Files/Pods-testHomegate/Pods-testHomegate.release.xcconfig"; sourceTree = "<group>"; };
 		DA18157AB0DB95113C0FE18B /* Pods_testHomegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testHomegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -284,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				8B85F4DA26BBA7F40019CDD4 /* PropertiesListView.swift */,
+				8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */,
 			);
 			path = PropertiesListView;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			children = (
 				8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */,
 				8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */,
+				8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				8BE61F2526BBAA2D006B8A22 /* UIViewController+Extension.swift in Sources */,
 				8BE61F2926BBAA2D006B8A22 /* UIToolbar+Extension.swift in Sources */,
 				8BE61F2626BBAA2D006B8A22 /* UITableViewCell+Extension.swift in Sources */,
+				8BE61F4126BD1F37006B8A22 /* ExternalUrls.swift in Sources */,
 				8BE61EEB26BBA9DC006B8A22 /* NetworkManager.swift in Sources */,
 				8BE61F2026BBAA2D006B8A22 /* UIColor+Extension.swift in Sources */,
 				8B85F4DB26BBA7F40019CDD4 /* PropertiesListView.swift in Sources */,
@@ -447,6 +454,7 @@
 				8BE61F2A26BBAA2D006B8A22 /* UIViewController+AlertPresenting+Extension.swift in Sources */,
 				8BE61F3326BBAA2D006B8A22 /* AlertControllerStyle.swift in Sources */,
 				8BE61F1C26BBAA2D006B8A22 /* Float+Extension.swift in Sources */,
+				8BE61F3F26BBC59F006B8A22 /* PropertiesListInteractor.swift in Sources */,
 				8BE61F1A26BBAA2D006B8A22 /* String+Extension.swift in Sources */,
 				8BE61F2126BBAA2D006B8A22 /* UILabel+Extension.swift in Sources */,
 				8BE61F1726BBAA2D006B8A22 /* Date+Extension.swift in Sources */,
