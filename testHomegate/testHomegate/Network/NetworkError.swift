@@ -8,5 +8,5 @@
 import Foundation
 
 enum NetworkError: Error {
-    case genericError
+    case genericError(_ message: String = "GENERIC")
 }

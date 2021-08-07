@@ -6,18 +6,13 @@
 //
 
 import Foundation
-import Realm
-import RealmSwift
 
-class StorageManager {
-    private var realm: Realm!
-
-    init() throws {
-        do {
-            realm = try Realm()
-        } catch {
-            throw StorageError.noStorage
-        }
-        
+class StorageManager: StorageProtocol {
+    
+    let userDefaults: UserDefaults
+    
+    init(userDefaults: UserDefaults = UserDefaults.standard) {
+        self.userDefaults = userDefaults
     }
+    
 }

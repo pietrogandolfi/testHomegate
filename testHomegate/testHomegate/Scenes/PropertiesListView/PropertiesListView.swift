@@ -8,22 +8,53 @@
 import SwiftUI
 
 struct PropertiesListView: View {
-    var interactor: PropertiesListInteractor
     
-    init() {
-        self.interactor = PropertiesListInteractor()
+    // MARK: - Properties
+    
+    @ObservedObject var viewModel: PropertyListViewModel
+    
+    // MARK: - Lifecycle
+    
+    init(viewModel: PropertyListViewModel) {
+        self.viewModel = viewModel
     }
+    
     var body: some View {
-        Text("Hello, world!")
-            .onAppear(perform: {
-                interactor.getProperties()
-            })
-            .padding()
+        NavigationView {
+            List {
+                if viewModel.dataSource.isEmpty {
+                    emptySection
+                } else {
+                    titleSection
+                }
+            }
+            .listStyle(InsetListStyle())
+            .navigationBarTitle("Property List")
+        }
+        .onAppear(perform: {
+            
+        })
     }
 }
 
-struct PropertiesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PropertiesListView()
+private extension PropertiesListView {
+    
+    var titleSection: some View {
+        Section {
+            ForEach(viewModel.dataSource, content: PropertyRow.init(viewModel:))
+        }
+    }
+    
+    var emptySection: some View {
+        Section {
+            Text("No results")
+                .foregroundColor(.gray)
+        }
     }
 }
+
+//struct PropertiesListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PropertiesListView(viewModel: $viewModel)
+//    }
+//}

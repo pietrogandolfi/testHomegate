@@ -11,7 +11,7 @@ import SwiftUI
 struct testHomegateApp: App {
     var body: some Scene {
         WindowGroup {
-            PropertiesListView()
+            PropertiesListView(viewModel: PropertyListViewModel())
         }
     }
 }

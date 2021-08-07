@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		8BE61EE626BBA9C0006B8A22 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EE426BBA9C0006B8A22 /* StorageManager.swift */; };
 		8BE61EEA26BBA9DC006B8A22 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EE726BBA9DC006B8A22 /* NetworkError.swift */; };
 		8BE61EEB26BBA9DC006B8A22 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EE826BBA9DC006B8A22 /* NetworkManager.swift */; };
-		8BE61EEC26BBA9DC006B8A22 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EE926BBA9DC006B8A22 /* NetworkService.swift */; };
 		8BE61F1426BBAA2D006B8A22 /* ToastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EF026BBAA2D006B8A22 /* ToastController.swift */; };
 		8BE61F1526BBAA2D006B8A22 /* ToastController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE61EF126BBAA2D006B8A22 /* ToastController.xib */; };
 		8BE61F1626BBAA2D006B8A22 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61EF326BBAA2D006B8A22 /* Int+Extension.swift */; };
@@ -52,8 +51,15 @@
 		8BE61F3726BBB071006B8A22 /* NetworkManager+properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3626BBB071006B8A22 /* NetworkManager+properties.swift */; };
 		8BE61F3B26BBB557006B8A22 /* PropertiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */; };
 		8BE61F3D26BBB5C1006B8A22 /* PropertyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */; };
-		8BE61F3F26BBC59F006B8A22 /* PropertiesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */; };
 		8BE61F4126BD1F37006B8A22 /* ExternalUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */; };
+		8BE61F4426BD1F84006B8A22 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4326BD1F84006B8A22 /* Property.swift */; };
+		8BE61F4626BD1FE6006B8A22 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4526BD1FE6006B8A22 /* PropertyListViewModel.swift */; };
+		8BE61F4826BD2306006B8A22 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4726BD2306006B8A22 /* StorageProtocol.swift */; };
+		8BE61F4B26BD235E006B8A22 /* StorageManager+properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4A26BD235E006B8A22 /* StorageManager+properties.swift */; };
+		8BE61F4D26BD24C3006B8A22 /* PropertyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4C26BD24C3006B8A22 /* PropertyRow.swift */; };
+		8BE61F4F26BD24E4006B8A22 /* PropertyRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F4E26BD24E4006B8A22 /* PropertyRowViewModel.swift */; };
+		8BE61F5126BE7EE7006B8A22 /* PropertyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F5026BE7EE7006B8A22 /* PropertyError.swift */; };
+		8BE61F5326BEB904006B8A22 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE61F5226BEB904006B8A22 /* ImageLoader.swift */; };
 		E37EE9A61C133E2AA5B4C0EC /* Pods_testHomegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA18157AB0DB95113C0FE18B /* Pods_testHomegate.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +75,6 @@
 		8BE61EE426BBA9C0006B8A22 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8BE61EE726BBA9DC006B8A22 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8BE61EE826BBA9DC006B8A22 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		8BE61EE926BBA9DC006B8A22 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8BE61EF026BBAA2D006B8A22 /* ToastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastController.swift; sourceTree = "<group>"; };
 		8BE61EF126BBAA2D006B8A22 /* ToastController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastController.xib; sourceTree = "<group>"; };
 		8BE61EF326BBAA2D006B8A22 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
@@ -106,8 +111,15 @@
 		8BE61F3626BBB071006B8A22 /* NetworkManager+properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+properties.swift"; sourceTree = "<group>"; };
 		8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesResponse.swift; sourceTree = "<group>"; };
 		8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItem.swift; sourceTree = "<group>"; };
-		8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListInteractor.swift; sourceTree = "<group>"; };
 		8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalUrls.swift; sourceTree = "<group>"; };
+		8BE61F4326BD1F84006B8A22 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		8BE61F4526BD1FE6006B8A22 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
+		8BE61F4726BD2306006B8A22 /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		8BE61F4A26BD235E006B8A22 /* StorageManager+properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageManager+properties.swift"; sourceTree = "<group>"; };
+		8BE61F4C26BD24C3006B8A22 /* PropertyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyRow.swift; sourceTree = "<group>"; };
+		8BE61F4E26BD24E4006B8A22 /* PropertyRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyRowViewModel.swift; sourceTree = "<group>"; };
+		8BE61F5026BE7EE7006B8A22 /* PropertyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyError.swift; sourceTree = "<group>"; };
+		8BE61F5226BEB904006B8A22 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		A77CA82199AB743630DA2CCE /* Pods-testHomegate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testHomegate.release.xcconfig"; path = "Target Support Files/Pods-testHomegate/Pods-testHomegate.release.xcconfig"; sourceTree = "<group>"; };
 		DA18157AB0DB95113C0FE18B /* Pods_testHomegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testHomegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,8 +197,11 @@
 		8B85F4E826BBA81E0019CDD4 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				8BE61F4226BD1F73006B8A22 /* Models */,
 				8BE61EE326BBA9C0006B8A22 /* StorageError.swift */,
 				8BE61EE426BBA9C0006B8A22 /* StorageManager.swift */,
+				8BE61F4726BD2306006B8A22 /* StorageProtocol.swift */,
+				8BE61F4926BD234E006B8A22 /* Properties */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -194,10 +209,9 @@
 		8B85F4E926BBA8220019CDD4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8BE61F3926BBB51D006B8A22 /* Model */,
+				8BE61F3926BBB51D006B8A22 /* Models */,
 				8BE61EE726BBA9DC006B8A22 /* NetworkError.swift */,
 				8BE61EE826BBA9DC006B8A22 /* NetworkManager.swift */,
-				8BE61EE926BBA9DC006B8A22 /* NetworkService.swift */,
 				8BE61F3526BBB04D006B8A22 /* Properties */,
 			);
 			path = Network;
@@ -206,6 +220,8 @@
 		8BE61EED26BBAA10006B8A22 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8BE61F5226BEB904006B8A22 /* ImageLoader.swift */,
+				8BE61F5026BE7EE7006B8A22 /* PropertyError.swift */,
 				8BE61EF226BBAA2D006B8A22 /* Extensions */,
 				8BE61F0B26BBAA2D006B8A22 /* Alert Controller */,
 				8BE61EEF26BBAA2D006B8A22 /* Toast Controller */,
@@ -288,19 +304,37 @@
 			isa = PBXGroup;
 			children = (
 				8B85F4DA26BBA7F40019CDD4 /* PropertiesListView.swift */,
-				8BE61F3E26BBC59F006B8A22 /* PropertiesListInteractor.swift */,
+				8BE61F4526BD1FE6006B8A22 /* PropertyListViewModel.swift */,
+				8BE61F4C26BD24C3006B8A22 /* PropertyRow.swift */,
+				8BE61F4E26BD24E4006B8A22 /* PropertyRowViewModel.swift */,
 			);
 			path = PropertiesListView;
 			sourceTree = "<group>";
 		};
-		8BE61F3926BBB51D006B8A22 /* Model */ = {
+		8BE61F3926BBB51D006B8A22 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				8BE61F3A26BBB557006B8A22 /* PropertiesResponse.swift */,
 				8BE61F3C26BBB5C1006B8A22 /* PropertyItem.swift */,
 				8BE61F4026BD1F37006B8A22 /* ExternalUrls.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BE61F4226BD1F73006B8A22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BE61F4326BD1F84006B8A22 /* Property.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BE61F4926BD234E006B8A22 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				8BE61F4A26BD235E006B8A22 /* StorageManager+properties.swift */,
+			);
+			path = Properties;
 			sourceTree = "<group>";
 		};
 		8FBA2FAF25114C661BEFD035 /* Frameworks */ = {
@@ -322,7 +356,6 @@
 				8B85F4D126BBA7F40019CDD4 /* Sources */,
 				8B85F4D226BBA7F40019CDD4 /* Frameworks */,
 				8B85F4D326BBA7F40019CDD4 /* Resources */,
-				CA8CF4BDB8DED2A6ADC2B9A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,23 +413,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CA8CF4BDB8DED2A6ADC2B9A8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testHomegate/Pods-testHomegate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-testHomegate/Pods-testHomegate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testHomegate/Pods-testHomegate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E49025DDD7B9D44684AE57D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +444,7 @@
 			files = (
 				8BE61F2526BBAA2D006B8A22 /* UIViewController+Extension.swift in Sources */,
 				8BE61F2926BBAA2D006B8A22 /* UIToolbar+Extension.swift in Sources */,
+				8BE61F4426BD1F84006B8A22 /* Property.swift in Sources */,
 				8BE61F2626BBAA2D006B8A22 /* UITableViewCell+Extension.swift in Sources */,
 				8BE61F4126BD1F37006B8A22 /* ExternalUrls.swift in Sources */,
 				8BE61EEB26BBA9DC006B8A22 /* NetworkManager.swift in Sources */,
@@ -441,10 +458,12 @@
 				8B85F4D926BBA7F40019CDD4 /* testHomegateApp.swift in Sources */,
 				8BE61F2D26BBAA2D006B8A22 /* AlertPriority.swift in Sources */,
 				8BE61F1626BBAA2D006B8A22 /* Int+Extension.swift in Sources */,
+				8BE61F5126BE7EE7006B8A22 /* PropertyError.swift in Sources */,
 				8BE61F1B26BBAA2D006B8A22 /* TimeZone+Extension.swift in Sources */,
 				8BE61F3B26BBB557006B8A22 /* PropertiesResponse.swift in Sources */,
 				8BE61F2C26BBAA2D006B8A22 /* UILayoutPriority+Extension.swift in Sources */,
 				8BE61EE526BBA9C0006B8A22 /* StorageError.swift in Sources */,
+				8BE61F5326BEB904006B8A22 /* ImageLoader.swift in Sources */,
 				8BE61F1926BBAA2D006B8A22 /* URL+Extension.swift in Sources */,
 				8BE61F2326BBAA2D006B8A22 /* UIImage+Extension.swift in Sources */,
 				8BE61F3D26BBB5C1006B8A22 /* PropertyItem.swift in Sources */,
@@ -454,7 +473,7 @@
 				8BE61F2A26BBAA2D006B8A22 /* UIViewController+AlertPresenting+Extension.swift in Sources */,
 				8BE61F3326BBAA2D006B8A22 /* AlertControllerStyle.swift in Sources */,
 				8BE61F1C26BBAA2D006B8A22 /* Float+Extension.swift in Sources */,
-				8BE61F3F26BBC59F006B8A22 /* PropertiesListInteractor.swift in Sources */,
+				8BE61F4F26BD24E4006B8A22 /* PropertyRowViewModel.swift in Sources */,
 				8BE61F1A26BBAA2D006B8A22 /* String+Extension.swift in Sources */,
 				8BE61F2126BBAA2D006B8A22 /* UILabel+Extension.swift in Sources */,
 				8BE61F1726BBAA2D006B8A22 /* Date+Extension.swift in Sources */,
@@ -465,10 +484,13 @@
 				8BE61F1F26BBAA2D006B8A22 /* UIResponder+Extension.swift in Sources */,
 				8BE61EEA26BBA9DC006B8A22 /* NetworkError.swift in Sources */,
 				8BE61F3126BBAA2D006B8A22 /* AlertActionStyle.swift in Sources */,
+				8BE61F4626BD1FE6006B8A22 /* PropertyListViewModel.swift in Sources */,
+				8BE61F4D26BD24C3006B8A22 /* PropertyRow.swift in Sources */,
+				8BE61F4826BD2306006B8A22 /* StorageProtocol.swift in Sources */,
 				8BE61F2426BBAA2D006B8A22 /* NSLayoutConstraint+Extension.swift in Sources */,
-				8BE61EEC26BBA9DC006B8A22 /* NetworkService.swift in Sources */,
 				8BE61F3226BBAA2D006B8A22 /* AlertPresenting.swift in Sources */,
 				8BE61F1426BBAA2D006B8A22 /* ToastController.swift in Sources */,
+				8BE61F4B26BD235E006B8A22 /* StorageManager+properties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

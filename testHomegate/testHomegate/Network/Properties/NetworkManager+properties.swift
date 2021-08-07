@@ -6,28 +6,21 @@
 //
 
 import Foundation
-import Moya
+import Combine
 
 extension NetworkManager {
     
-    func getAllProperties(completion: @escaping (([PropertyItem]?, Error?)) -> Void) {
-        _ = self.request(.getAllProperties) { result in
-            switch result {
-            case .success(let response):
-                do {
-                    let filteredResponse = try response.filterSuccessfulStatusAndRedirectCodes()
-                    let propertiesResponse = try filteredResponse.map(PropertiesResponse.self)
-                    
-                    completion((propertiesResponse.items, nil))
-                } catch {
-
-                    completion((nil, error))
-                }
-                
-            case .failure(let error):
-                completion((nil, error))
-            }
-        }
+    func getAllProperties() -> AnyPublisher<PropertiesResponse, PropertyError> {
+        return properties(with: makePropertiesComponents())
     }
     
+    private func makePropertiesComponents() -> URLComponents {
+        var components = URLComponents()
+        
+        components.scheme = "http"
+        components.host = "private-492e5-homegate1.apiary-mock.com"
+        components.path = "/properties"
+        
+        return components
+    }
 }

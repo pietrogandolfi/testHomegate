@@ -6,8 +6,5 @@ target 'testHomegate' do
   use_frameworks!
 
   # Pods for testHomegate
-  pod 'RealmSwift', '~>10.8.1'
-  pod 'Moya', '~> 14.0'
-  pod 'Kingfisher', '~> 6.0'
 
 end

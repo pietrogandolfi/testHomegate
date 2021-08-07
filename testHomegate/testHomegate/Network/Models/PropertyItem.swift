@@ -49,6 +49,5 @@ struct PropertyItem: Codable {
     let interestedFormType: Int//2,
     let externalUrls: [ExternalUrls]?
     let picFilename1: String //"https://uat.homegate.ch/www/ftp/q027x/images/0001466.jpg"
+    
 }
-
-
