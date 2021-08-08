@@ -47,9 +47,7 @@ struct PropertyRow: View {
                     
                     Spacer()
                     
-                    Button(action: {
-                        print("TAPPED")
-                        
+                    Button(action: {                        
                         self.isFavourite = !self.isFavourite
                         viewModel.setFavorite(self.isFavourite)
                     }) {

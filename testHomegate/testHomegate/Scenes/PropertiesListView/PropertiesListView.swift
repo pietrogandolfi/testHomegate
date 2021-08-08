@@ -31,9 +31,6 @@ struct PropertiesListView: View {
             .listStyle(InsetListStyle())
             .navigationBarTitle("Property List")
         }
-        .onAppear(perform: {
-            
-        })
     }
 }
 
@@ -52,9 +49,3 @@ private extension PropertiesListView {
         }
     }
 }
-
-//struct PropertiesListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PropertiesListView(viewModel: $viewModel)
-//    }
-//}

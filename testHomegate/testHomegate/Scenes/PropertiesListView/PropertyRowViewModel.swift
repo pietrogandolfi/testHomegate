@@ -41,11 +41,15 @@ struct PropertyRowViewModel: Identifiable {
         return isFavourite
     }
     
+    // MARK: - Lifecycle
+    
     init(item: PropertyItem) {
         self.item = item
         self.storage = StorageManager()
         
     }
+    
+    // MARK: - Actions
     
     func setFavorite(_ value: Bool) {
         let property = Property(id: self.id, isFavourite: value)
@@ -53,14 +57,4 @@ struct PropertyRowViewModel: Identifiable {
         print(isFavourite)
     }
     
-}
-
-extension PropertyRowViewModel: Hashable {
-  static func == (lhs: PropertyRowViewModel, rhs: PropertyRowViewModel) -> Bool {
-    return lhs.price == rhs.price
-  }
-
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(self.price)
-  }
 }
